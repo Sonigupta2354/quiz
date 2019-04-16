@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+     <html>
+<head>
+	<title>CssPage</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="..\navbar2.css">
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('ul').toggleClass('active');
+      })
+
+    })
+  </script>
+
+
+	<style type="text/css">
+		h3{
+			color:teal; 
+
+		}
+		.text{
+	color: #d64161;
+	margin-top: 3%;
+	text-align: center;
+	line-height: 1.2em;
+	font-size: 55px;
+	width: 85%;
+	letter-spacing: -.05em;
+}
+  @media (max-width: 767px)
+   {
+   .content{
+    display: none;
+         }
+    .content2{
+      padding-left:20px;
+      margin-right: 30px;
+      align-self:center;
+    }
+ }
+	</style>
+
+</head>
+<body>
+
+  <section>
+    <header>
+
+      <a href="#" class="logo"> <img  style=" width: 150px; height: 72px;    padding-bottom: 5px;"src="..\image\education1.png"></a>
+      <a class="toggle">Menu</a>
+      <ul class="list">
+          <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">OOPs</a></li>
+           <li><a href="#">ABOUT US</a></li>
+      </ul>
+    </header>
+  </section>
+	<h4 class="text">Browser Support </h4> <br>
+
+   <div class="content" style="width:15%;height:90%;float: left; border: 2px solid gray;  margin-left:5px; padding-top: 5px;">
+    <ul type="none">
+    <li><h3>Basic lessons</h3></li><hr>
+   <li><a href="csspage1.html">CSS Tutorial  </a></li><hr>
+    <li><a href="csspage2.html">CSS Introduction</a></li><hr>
+    <li><a href="csspage3.html">CSS Variable </a></li><hr> 
+    <li><a href="csspage4.html">Importing</a></li><hr>
+    <li><a href="csspage5.html">Import Directives</a></li><hr>
+    <li><a href="csspage6.html">Import Options </a></li><hr>
+    <li><a href="csspage7.html">Mixins </a></li><hr>
+    <li><a href="csspage8.html">Mixins as a function</a></li><hr>
+    <li><a href="csspage9.html">Operations</a></li><hr>
+    <li><a href="csspage10.html">Scope</a></li><hr>
+    <li><a href="csspage11.html">Functions</a></li><hr>
+    <li><a href="csspage12.html">Escaping</a></li><hr>
+    <li><a href="csspage13.html">Command line uses</a></li><hr>
+    <li><a href="csspage14.html">Browser Support </a></li><hr>
+    <li><a href="csspage15.html">Color</a></li><hr>
+    <li><a href="csspage16.html">Parent Selector</a></li><hr>
+    <li><a href="csspage17.html">Programatic Use</a></li><hr>
+    <li><a href="csspage18.html">Guards</a> </li><hr>
+    <li><a href="csspage19.html">Merge </a></li><hr>
+    <li><a href="csspage620.html">Loops</a></li><hr>
+    
+ </ul>
+</div>
+   
+   <div class="content2" style="width:80%;height:100%;float: right; border: 2px solid gray; padding-left:15px; padding-top: 20px;padding-right: 15px;">
+    <!--Introduction-->
+   	<div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Introduction</h3></div> <div class="col-md-10 col-sm-10">This chapter, gives an overview of Less browser support. Here, the following are explained: the browsers supporting Less, using less in browser and various options for using Less in browser.<p> </p></div></div><br>
+
+     <!--description-->
+     <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">Less supports running on latest versions of modern browsers such as:
+      <div style="border:2px solid lightgray;  border-left:5px solid teal;width:55%; height:35%; margin-left: 20px; border-radius :5px;padding: 10px 0px 10px 10px;">
+        <ul>
+          <li>Internet Explorer</li>
+          <li>Firefox</li>
+          <li>Safari</li>
+          <li>Google Chrome</li>
+        </ul>
+
+      </div><br>
+      Less can be used on the client side production, but it is important to remember that there are performance implications on working client side. There is a possibility of occurrence of cosmetic issues when a JavaScript error occurs, which is a trade of flexibility vs speed. So, it is highly recommended to compile Less on the server side to get fast performance for a static web site.
+      <p> </p></div></div><br>
+
+      <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">More Info</h3></div> <div class="col-md-10 col-sm-10">Currently the <b>PhantomJS</b> does not implement Function.prototype.bind. So, a es-5 shim is required to run the function under<b> PhantomJS</b>. To run less in older browsers, use<b> es-5 shim</b>, so that it adds the JavaScript features required to run less.<p> </p></div></div>
+
+      <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">It is highly recommended to use less in browser side for development purposes. The less file cannot be compiled dynamically on sever side because less is a large JavaScript file. Hence, one needs to include the less script to use less in browser.
+        <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+         height:20%;  padding: 10px 0px 10px 10px; ">
+           &lt;script src="less.js"&gt;&lt;/script&gt;
+         </div>
+         <br>
+         For finding less style tags on the page, create style tags with the CSS compiled.
+         <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+         height:20%;  padding: 10px 0px 10px 10px; ">
+           
+        &lt;link rel="stylesheet/less" type="text/css" href="style.less"&gt;
+
+         </div>
+      <p> </p></div></div><br>
+
+  <!--Description-->
+  <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">The options can be set programmatically, all the initial link tags and the programmatic usage of less are effected by setting them on a less object before the script tag.
+
+ <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:90%;
+    height:28%;  padding: 10px 0px 20px 10px; ">
+
+    &lt;script&gt;<br>
+less = {<br>
+env: "development"<br>
+};<br>
+&lt;/script&gt;<br>
+&lt;script src="less.js"&gt;<br>
+&lt;/script&gt;<br></div><br>
+
+The optional way to specify the script tag is.
+<div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:90%;
+    height:28%;  padding: 10px 0px 10px 10px; ">
+&lt;script&gt;<br>
+less = {<br>
+env: "development"<br>
+};<br>
+&lt;/script&gt;<br>
+&lt;script src="less.js" data-env="development"&gt;<br>&lt;/script&gt;
+</div><br>
+To add to the link tags to override the settings.
+
+<div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:90%;
+    height:16%;  padding: 10px 0px 20px 10px; ">
+  &lt;link data-dump-line-numbers="all" data-global-vars='{ "var": "#ddffee", "str": "\"quoted\"" }' rel="stylesheet/less" type="text/css" href="less/styles.less"<br>
+
+
+</div><p> </p></div></div>
+
+  <!--description-->
+     <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">The watch mode can be enabled by setting the env option for developing and can call the <b>less.watch()</b> after the less.js file is added. For enabling the watch mode temporarily, add <b>#!watch</b>
+
+    <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:90%;
+    height:48%;  padding: 10px 0px 20px 10px; ">
+
+    &lt;script&gt;less = { env: 'development'};&lt;/script&gt;<br>
+    &lt;script src="less.js"&gt;&lt;/script&gt;<br>
+    &lt;script&gt;less.watch();&lt;/script&gt;<br>
+
+    </div><p> </p></div></div>
+
+    <!--description-->
+     <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">The Modify Variable enables the run-time modifications of Less Variables by calling with new values, the Less file is recompiled without reloading.
+      <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:90%;
+    height:55%;  padding: 10px 0px 20px 10px; ">
+
+    less.modifyVars({<br>
+    '@buttonFace': '#5B83ED',<bR>
+    '@buttonText': '#D9EEE2'<br>
+    });<br>
+    </div><p> </p></div></div>
+
+
+    <!--description-->
+     <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">
+      By Debugging, users will get the css output rules that allows some tools to locate the source of the rule.<br>
+Either specify the option <div style="background-color:lightgray;color:red;display: inline-block;">dumpLineNumbers</div> or add the <div style="background-color:lightgray;color:red; display: inline-block;"> !dumpLineNumbers:mediaquery</div> to the url as mentioned above.<bR>
+
+The option <div style="background-color:lightgray;color:red; display: inline-block;">mediaquery</div> can be used with  <div style="background-color:lightgray;color:red; display: inline-block;">FireLESS</div>( similar to SCSS media query debugging format) and the option  <div style="background-color:lightgray;color:red; display: inline-block;">comment</div> can be used to display the line numbers in the inline compiled CSS code and also used to display the file information.
+<p> </p></div></div>
+
+  <!--description-->
+     <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">Set the options in a global less object before loading the less.js script.
+      <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:90%;
+    height:88%;  padding: 10px 0px 20px 10px; ">
+    <!-- set options before less.js script -->
+    &lt;script&gt;<br>
+      less = {<br>
+        env: "development",<br>
+        logLevel: 2,<br>
+        async: false,<br>
+        fileAsync: false,<br>
+        poll: 1000,<br>
+        functions: {},<br>
+        dumpLineNumbers: "comments",<br>
+        relativeUrls: false,<br>
+        globalVars: {<br>
+          var1: '"string value"',<br>
+          var2: 'regular value'<br>
+        },<br>
+        rootpath: ":/a.com/"<br>
+      };<br>
+    &lt;/script&gt;
+    &lt;script src="less.js"&gt; &lt;/script&gt;
+</div><p> </p></div></div>
+
+
+<!--points-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Key Points</h3></div> <div class="col-md-10 col-sm-10">
+      <ul>
+        
+        <li>Highly recommended to compile less on server side to get clean and fast output without any issues.</li>
+        <li>PhontomJS in less need es-5 shim to run the functions.</li>
+      </ul><p> </p></div></div><br>
+
+
+    <div class="btn btn-success" style="float: right; background:white;"><a href="csspage12.html">Next lesson</a></div>
+        <div class="btn btn-success" style="float: left;background:white;"><a href="csspage10.html">Previous lesson</a></div><br><br>
+
+         
+   </div>
+
+    <!--footer-->
+    <div class="abc" style="width:100%; display:inline-block;">
+<footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3>Education Portal</h3>
+              <p>Education portal acts as tool to enhance learning and supplement classroom teaching. These website help make the process of learning and attractive to the student, especially in today’s age.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Usefull links</h4>
+              <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Lessons Descriptions</a></li>
+                <li><a href="#">courses</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>A-49 Near hanuman Mandir<br>
+                 indrapuri extension loni road<br>
+                 Ghaziabad<br>
+                <strong> Phone:</strong> +91 9718327736, +91 9711235497<br>
+                <strong> Email:</strong> guptasoni2005@gmail.com
+              </p>
+              
+
+                        
+                    <div class="social" style="background-color: none;">
+      
+                  <span class="footer-social-overlap footer-social-icons-wrapper">
+                  <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+                  <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                  <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+                  <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+                  </span></div>
+              
+            </div>
+            <div class="col-lg-3 col-md-6 footer-newslater">
+              <h4>Our Newslater</h4>
+              <p>About Website Get Latest daily news and headlines about information on education careers & jobs on Education Times. Latest India Education PR on News section at Brainbuxa Times. Daily News updated when a major India Education scoop arises.
+                        Frequency about 15 posts per week.</p>
+                        <form action="" method="post">
+                          <input type="Email" name="Email" required placeholder="Email">
+                          <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+          </div>
+        </div>
+      </div>
+      
+    
+   <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Education Portal</strong>All Rights Reserved <br>
+        
+      <div class="credits">
+        Designed By <a href="#"> Bharti kannaujiya and Soni</a>
+     </div>
+     </div>
+</div>
+  
+  </footer>
+   </body>
+   </html>

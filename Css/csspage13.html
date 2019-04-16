@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+     <html>
+<head>
+	<title>CssPage</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="..\navbar2.css">
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('ul').toggleClass('active');
+      })
+
+    })
+  </script>
+
+
+	<style type="text/css">
+		h3{
+			color:teal; 
+
+		}
+		.text{
+	color: #d64161;
+	margin-top: 3%;
+	text-align: center;
+	line-height: 1.2em;
+	font-size: 55px;
+	width: 85%;
+	letter-spacing: -.05em;
+}
+  @media (max-width: 767px)
+   {
+   .content{
+    display: none;
+         }
+    .content2{
+      padding-left:20px;
+      margin-right: 30px;
+      align-self:center;
+    }
+ }
+	</style>
+
+</head>
+<body>
+
+  <section>
+    <header>
+
+      <a href="#" class="logo"> <img  style=" width: 150px; height: 72px;    padding-bottom: 5px;"src="..\image\education1.png"></a>
+      <a class="toggle">Menu</a>
+      <ul class="list">
+          <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">OOPs</a></li>
+           <li><a href="#">ABOUT US</a></li>
+      </ul>
+    </header>
+  </section>
+	<h4 class="text">Command line Uses</h4> <br>
+
+   <div class="content" style="width:15%;height:90%;float: left; border: 2px solid gray;  margin-left:5px; padding-top: 5px;">
+    <ul type="none">
+    <li><h3>Basic lessons</h3></li><hr>
+   <li><a href="csspage1.html">CSS Tutorial  </a></li><hr>
+    <li><a href="csspage2.html">CSS Introduction</a></li><hr>
+    <li><a href="csspage3.html">CSS Variable </a></li><hr> 
+    <li><a href="csspage4.html">Importing</a></li><hr>
+    <li><a href="csspage5.html">Import Directives</a></li><hr>
+    <li><a href="csspage6.html">Import Options </a></li><hr>
+    <li><a href="csspage7.html">Mixins </a></li><hr>
+    <li><a href="csspage8.html">Mixins as a function</a></li><hr>
+    <li><a href="csspage9.html">Operations</a></li><hr>
+    <li><a href="csspage10.html">Scope</a></li><hr>
+    <li><a href="csspage11.html">Functions</a></li><hr>
+    <li><a href="csspage12.html">Escaping</a></li><hr>
+    <li><a href="csspage13.html">Command line uses</a></li><hr>
+    <li><a href="csspage14.html">Browser Support </a></li><hr>
+    <li><a href="csspage15.html">Color</a></li><hr>
+    <li><a href="csspage16.html">Parent Selector</a></li><hr>
+    <li><a href="csspage17.html">Programatic Use</a></li><hr>
+    <li><a href="csspage18.html">Guards</a> </li><hr>
+    <li><a href="csspage19.html">Merge </a></li><hr>
+    <li><a href="csspage620.html">Loops</a></li><hr>
+    
+ </ul>
+</div>
+   
+   <div class="content2" style="width:80%;height:100%;float: right; border: 2px solid gray; padding-left:15px; padding-top: 20px;padding-right: 15px;">
+    <!--Introduction-->
+   	<div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Introduction</h3></div> <div class="col-md-10 col-sm-10">This chapter explains about command line uses, how to Install Lessc globally, Node development installation, Command line usage in Less along with examples,  and Options for command line usage.
+    <p> </p></div></div><br>
+
+    <!--Description-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">The .less file can be compiled to .css file only by using the command line.
+      <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+    height:35%;  padding: 10px 0px 20px 10px; ">
+    lessc style.less style.css
+  </div><p> </p></div></div>
+
+  <!--Description-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">With the help of NPM (Node package manager), install LESS on server. To install, type the following command in the command prompt.<br>
+      <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+    height:20%;  padding: 10px 0px 10px 10px; ">
+    npm install –g less
+  </div><br>Add specific version after the package name as shown below.<br>
+  <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+    height:20%;  padding: 10px 0px 10px 10px; ">
+    Npm install less@1.6.2 -g
+  </div><p> </p></div></div><br>
+
+   <!--Description-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">To install lessc latest version in the project folder, use the following command.
+      <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+    height:20%;  padding: 10px 0px 10px 10px; ">
+  npm I less –save-dev</div><br>
+
+  Install the latest version lessc in the project folder and add the dev <b>dependencies</b> in the project <b>package.json.</b>
+  <p> </p></div></div><br>
+
+
+  <!--Description-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Description</h3></div> <div class="col-md-10 col-sm-10">The bin/lessc includes binary in this repository, works with Node js on OS X, Windows and *nix.<br><b>Command line Usage:</b>
+      <div style="background-color:black; border:2px solid yellow; color:skyblue;border-radius:10px; width:70%;
+    height:4r5%;  padding: 10px 0px 10px 10px; ">
+    lessc [option option=parameter ….] <source> [destination]
+shape</div><p> </p></div></div><br>
+
+<!--Options-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Options</h3></div> <div class="col-md-10 col-sm-10">Below table explains the options and command usage in Less.<br>
+
+<div style="padding:10px; margin-right: 10px;">
+   <table border="2" cellpadding="10" cellspacing="2" width="100%"  >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h4><b>Option</b></h4></td>
+      <td><h4><b>Command</b></h4></td></tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Help</b><br>By using this command, a help message is printed with available options and exits.</h5></td>
+      <td><h5>lessc –help
+lessc -h</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Include Paths:</b><br>By using this command, the available paths are included in the library, which one wants to refer simply and relatively in the less files.</h5></td>
+      <td><h5>lessc –include-path=PATH1;PATH2</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Makefile:</b><br>By using this command, the dependencies list is imported to stdout.</h5></td>
+      <td><h5>lessc -m
+lessc –depends</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>No Color:</b><br>By using this command, the disabled output get colorized.</h5></td>
+      <td><h5>lessc –no-color</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>No IE Compatibility:</b><br>This command disables the IE Compatibility. Currently, it is only used for the data-uri function to check whether the images created are too large for the browser to handle.</h5></td>
+      <td><h5>lessc –no-ie-compat</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Disable Javascript:</b><br>By using this command, the javascript in less files get disabled.</h5></td>
+      <td><h5>lessc –no-js</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Lint:</b></h5><br>By using this command, the syntax is verified and displays error without any output.</td>
+      <td><h5>lessc –lint
+lessc -1</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Silent:</b></h5><br>This command stops the warnings to be shown</td>
+      <td><h5>essc -s
+lessc –silent</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Strict Imports:</b></h5><br>This command forces the evaluation of imports.</td>
+      <td><h5>lessc –strict-imports</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Allow imports from HTTPS Hosts:</b></h5><br>This command allows to import from the insecure HTTPS hosts.</td>
+      <td><h5>lessc –insecure</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Version:</b></h5><br>By using this command, the version number get displayed and exits.</td>
+      <td><h5>lessc -version
+lessc -v</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Compress:</b></h5><br>By using this command, the output get compressed and the whitespaces are removed.</td>
+      <td><h5>lessc -x
+lessc –compress</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Source Map Rootpath:</b></h5><br>The command is used to specify the rootpath and add the less file paths inside the source map. It also maps the specified file in the output css.</td>
+      <td><h5>lessc –source-map-rootpath=dev-files/</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Source Map Basepath:</b></h5><br>The command is used to remove the specified path from the output paths. The Basepath command is opposite to the Rootpath command.</td>
+      <td><h5>lessc –source-map-basepath=less-files/</h5></td></tr>
+
+      <tr style="background-color: white; width:100%;">
+      <td><h5><b>Source Map Less Inline:</b></h5><br>The command is used to specify and include all the less files into the sourcemap.</td>
+      <td><h5>lessc –source-map-map-inline</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Source Map Map inline:</b></h5><br>The command used to specify the map file in the output css should be inline.</td>
+      <td><h5>lessc –source-map-map-inline</h5></td></tr>
+
+       <tr style="background-color: white; width:100%;">
+      <td><h5><b>Source Map URL:</b></h5><br>The command allows one to override the URL in CSS, which points at the map file.</td>
+      <td><h5>lessc –source-map-url=../my-map.json</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Roothpath:</b></h5><br>The command used to specify the map file in the output css should be inline.</td>
+      <td><h5>lessc –source-map-map-inline
+</h5></td></tr>
+
+       <tr style="background-color: white; width:100%;">
+      <td><h5><b>Relative Urls:</b></h5><br>The command allows one to re-write the URL’s in imported files, through which the URL is always relative to the imported base file.</td>
+      <td><h5>lessc -ru
+lessc –relative-urls</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Strict Math:</b></h5><br>The command used to process all math functions in the output CSS and by default it is off.</td>
+      <td><h5>lessc -sm=on
+lessc –strict-math=on</h5></td></tr>
+
+
+       <tr style="background-color: white; width:100%;">
+      <td><h5><b>Strict Units:</b></h5><br>The command allows the mixed units and by default it is off.</td>
+      <td><h5>lessc -su=on
+lessc –strict-units=on</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Global Variable:</b></h5><br>The command used to define a variable, so that it can be referred by the file.</td>
+      <td><h5>lessc–global-var=”my-background=red”</h5></td></tr>
+
+
+       <tr style="background-color: white; width:100%;">
+      <td><h5><b>Modify Variable:</b></h5><br>The modify Variable command is opposite of global variable command and puts the declaration at the end of a base file.</td>
+      <td><h5>lessc –modify-var=”my-background=blue”</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>URL Arguments:</b></h5><br>The command allows one to specify a argument to move to every URL, and for instance it is used for cache-busting.</td>
+      <td><h5>lessc –url-args=”arg736357</h5></td></tr>
+
+       <tr style="background-color: white; width:100%;">
+      <td><h5><b>Line Numbers:</b></h5><br>The command is used to generate the inline source mapping.</td>
+      <td><h5>lessc –line-numbers=comments
+lessc –line-numbers=mediaquery
+lessc –line-numbers=all</h5></td></tr>
+
+      <tr style="background-color:lightgray; width:100%;">
+      <td><h5><b>Plugin</b></h5><br>The command is used to load the plugin.</td>
+      <td><h5>lessc –clean-css
+lessc –plugin=clean-css=”advanced”</h5></td></tr>
+
+
+       
+     
+  </table>
+</div>
+<p> </p></div></div><br>
+
+<!--points-->
+    <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading">Key Points</h3></div> <div class="col-md-10 col-sm-10">
+      <ul>
+        
+        <li>Node.js package manager is mandatory to run Less files.</li>
+        <li>Command lines are important to install NPM and to convert .less to .css.</li>
+      </ul><p> </p></div></div><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="btn btn-success" style="float: right; background:white;"><a href="csspage12.html">Next lesson</a></div>
+        <div class="btn btn-success" style="float: left;background:white;"><a href="csspage10.html">Previous lesson</a></div><br><br>
+
+         
+   </div>
+
+    <!--footer-->
+    <div class="abc" style="width:100%; display:inline-block;">
+<footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3>Education Portal</h3>
+              <p>Education portal acts as tool to enhance learning and supplement classroom teaching. These website help make the process of learning and attractive to the student, especially in today’s age.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Usefull links</h4>
+              <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Lessons Descriptions</a></li>
+                <li><a href="#">courses</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>A-49 Near hanuman Mandir<br>
+                 indrapuri extension loni road<br>
+                 Ghaziabad<br>
+                <strong> Phone:</strong> +91 9718327736, +91 9711235497<br>
+                <strong> Email:</strong> guptasoni2005@gmail.com
+              </p>
+              
+
+                        
+                    <div class="social" style="background-color: none;">
+      
+                  <span class="footer-social-overlap footer-social-icons-wrapper">
+                  <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+                  <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                  <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+                  <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+                  </span></div>
+              
+            </div>
+            <div class="col-lg-3 col-md-6 footer-newslater">
+              <h4>Our Newslater</h4>
+              <p>About Website Get Latest daily news and headlines about information on education careers & jobs on Education Times. Latest India Education PR on News section at Brainbuxa Times. Daily News updated when a major India Education scoop arises.
+                        Frequency about 15 posts per week.</p>
+                        <form action="" method="post">
+                          <input type="Email" name="Email" required placeholder="Email">
+                          <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+          </div>
+        </div>
+      </div>
+      
+    
+   <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Education Portal</strong>All Rights Reserved <br>
+        
+      <div class="credits">
+        Designed By <a href="#"> Bharti kannaujiya and Soni</a>
+     </div>
+     </div>
+</div>
+  
+  </footer>
+   </body>
+   </html>

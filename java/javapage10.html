@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+     <html>
+<head>
+	<title>Java Tutorial</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="..\navbar2.css">
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('ul').toggleClass('active');
+      })
+
+    })
+  </script>
+
+
+	<style type="text/css">
+		h3{
+			color:teal; 
+
+		}
+    .image{
+      opacity: -0.1;
+    }
+		.text{
+	color: #d64161;
+	margin-top: 3%;
+	text-align: center;
+	line-height: 1.2em;
+	font-size: 55px;
+	width: 85%;
+	letter-spacing: -.05em;
+  margin-left:20px; 
+}
+  @media (max-width: 767px)
+   {
+   .content{
+    display: none;
+         }
+    .content2{
+      padding-left:20px;
+      margin-right: 30px;
+      align-self:center;
+    }
+ }
+	</style>
+
+</head>
+<body >
+  
+  <section>
+    <header>
+
+      <a href="#" class="logo"> <img  style=" width: 150px; height: 72px;    padding-bottom: 5px;"src="..\image\education1.png"></a>
+      <a class="toggle">Menu</a>
+      <ul class="list">
+          <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">OOPs</a></li>
+           <li><a href="#">ABOUT US</a></li>
+      </ul>
+    </header>
+  </section>
+	<h4 class="text">Basic Operators</h4> <br>
+
+   <div class="content" style="width:15%;height:90%;float: left; border: 2px solid lightgray;  margin-left:5px; padding-top: 5px;">
+    <ul type="none">
+    <li><h3>Basic lessons</h3></li><hr>
+   <li><a href="javapage1.html"> java intro </a></li><hr>
+    <li><a href="javapage2.html">java-Overview</a></li><hr>
+    <li><a href="javapage3.html">java-Environment Setup</a></li><hr> 
+    <li><a href="javapage4.html">java-Basic Syntax</a></li><hr>
+    <li><a href="javapage5.html">java-Object & Class</a></li><hr>
+    <li><a href="javapage6.html">java-Constructors </a></li><hr>
+    <li><a href="javapage7.html">java-Basic Datatypes </a></li><hr>
+    <li><a href="javapage8.html">Java-Variable Types</a></li><hr>
+    <li><a href="javapage9.html">java-Modifier Types</a></li><hr>
+    <li><a href="javapage10.html">java-Basic Operators</a></li><hr>
+    <li><a href="javapage11.html">java-Loop Control</a></li><hr>
+    <li><a href="javapage12.html">java-Decision Making</a></li><hr>
+    <li><a href="javapage13.html">java-Numbers</a></li><hr>
+    <li><a href="javapage14.html">Java-Characters</a></li><hr>
+    <li><a href="javapage15.html">java-Strings</a></li><hr>
+    <li><a href="javapage16.html">java-Arrays</a></li><hr>
+    <li><a href="javapage17.html">java-Date & Time</a></li><hr>
+    <li><a href="javapage18.html">java-Methods</a> </li><hr>
+    <li><a href="javapage19.html">java-Files and I/O </a></li><hr>
+    <li><a href="javapage20.html">java-Object Oriented</a></li><hr>
+    <li><a href="javapage21.html">java-Advanced</a></li><hr>
+    
+ </ul>
+</div>
+   
+   <div class="content2" style="width:80%;height:100%;float: right; border: 2px solid lightgray; padding-left:15px; padding-top: 20px;padding-right: 15px; margin-right: 50px; margin-left: 100px;">
+
+  <p>Java provides a rich set of operators to manipulate variables. We can divide all the Java operators into the following groups −</p><br>
+  <ul type="square">
+    <li>Arithmetic Operators</li>
+    <li>Relational Operators</li>
+    <li>Bitwise Operators</li>
+    <li>Logical Operators</li>
+    <li>Assignment Operators</li>
+    <li>Misc Operators</li>
+  </ul>
+<h3>The Arithmetic Operators</h3>
+
+<p>Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators −</p><br>Assume integer variable A holds 10 and variable B holds 20, then −<br>
+
+
+<div style="padding:10px; ">
+   <table border="2"  cellspacing="1" width="100%" style="margin-right:10px;" >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h6>Operator</h6></td>
+      <td><h6>Description</h6></td>
+      <td><h6>Example</h6></td>
+    </tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>+ (Addition)</h6></td>
+      <td><h6>Adds values on either side of the operator.</h6></td>
+      <td><h6> if A=10 and B=20 then, A + B will give 30</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> - (Subtraction)</h6></td>
+      <td><h6>Subtracts right-hand operand from left-hand operand.</h6></td>
+      <td><h6>A - B will give -10</h6></td>
+     </tr>  
+
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>* (Multiplication)</h6></td>
+      <td><h6>Multiplies values on either side of the operator.</h6></td>
+      <td><h6>A * B will give 200</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>/ (Division)</h6></td>
+      <td><h6>Divides left-hand operand by right-hand operand.</h6></td>
+      <td><h6>B / A will give 2</h6></td>
+     </tr>  
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>% (Modulus)</h6></td>
+      <td><h6>Divides left-hand operand by right-hand operand and returns remainder.</h6></td>
+      <td><h6>B % A will give 0</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>++ (Increment)</h6></td>
+      <td><h6>Increases the value of operand by 1.</h6></td>
+      <td><h6>B++ gives 21</h6></td>
+     </tr>
+
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>- (Decrement)</h6></td>
+      <td><h6>Decreases the value of operand by 1.</h6></td>
+      <td><h6>B-- gives 19</h6></td>
+      </tr>
+  </table>
+ </div><br>
+
+ <h3>The Relational Operators</h3><p>There are following relational operators supported by Java language.</p>Assume variable A holds 10 and variable B holds 20, then −<br>
+
+<div style="padding:10px; ">
+   <table border="2"  cellspacing="1" width="100%" style="margin-right:10px;" >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h6>Operator</h6></td>
+      <td><h6>Description</h6></td>
+      <td><h6>Example</h6></td>
+    </tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>== (equal to)</h6></td>
+      <td><h6>Checks if the values of two operands are equal or not, if yes then condition becomes true.</h6></td>
+      <td><h6>(A == B) is not true.</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>!= (not equal to) </h6></td>
+      <td><h6>Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</h6></td>
+      <td><h6>(A != B) is true.</h6></td>
+     </tr>  
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6> > (greater than)</h6></td>
+      <td><h6>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</h6></td>
+      <td><h6> (A > B) is not true. </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> < (less than)</h6></td>
+      <td><h6>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</h6></td>
+      <td><h6>(A < B) is true</h6></td>
+     </tr>  
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>>= (greater than or equal to)</h6></td>
+      <td><h6>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</h6></td>
+      <td><h6>(A >= B) is not true. </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> <= (less than or equal to)</h6></td>
+      <td><h6>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</h6></td>
+      <td><h6>(A <= B) is true.</h6></td>
+     </tr>  
+</table>
+</div><br>
+
+<h3>The Bitwise Operators</h3><p>Java defines several bitwise operators, which can be applied to the integer types, long, int, short, char, and byte.<br>
+
+Bitwise operator works on bits and performs bit-by-bit operation. Assume if a = 60 and b = 13; now in binary format they will be as follows −</p><br>
+
+a = 0011 1100<br>
+
+b = 0000 1101<br>
+
+-----------------<br>
+
+a&b = 0000 1100<br>
+
+a|b = 0011 1101<br>
+
+a^b = 0011 0001<br>
+
+~a  = 1100 0011<br>The following table lists the bitwise operators −<br>
+Assume integer variable A holds 60 and variable B holds 13 then −<br>
+
+
+<div style="padding:10px; margin-right: 30px; width: 100%;">
+   <table border="2"  cellspacing="1" width="100%" style="margin-right:100px;" >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h6>Operator</h6></td>
+      <td><h6>Description</h6></td>
+      <td><h6>Example</h6></td>
+    </tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>& (bitwise and)</h6></td>
+      <td><h6>Binary AND Operator copies a bit to the result if it exists in both operands.</h6></td>
+      <td><h6> (A & B) will give 12 which is 0000 1100</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>| (bitwise or)</h6></td>
+      <td><h6>Binary OR Operator copies a bit if it exists in either operand.</h6></td>
+      <td><h6>(A | B) will give 61 which is 0011 1101</h6></td>
+     </tr>  
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>^ (bitwise XOR)</h6></td>
+      <td><h6>Binary XOR Operator copies the bit if it is set in one operand but not both.</h6></td>
+      <td><h6>(A ^ B) will give 49 which is 0011 0001 </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>~ (bitwise compliment) </h6></td>
+      <td><h6>Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.</h6></td>
+      <td><h6>(~A ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.</h6></td>
+     </tr>  
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6><< (left shift)</h6></td>
+      <td><h6>Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.</h6></td>
+      <td><h6>A << 2 will give 240 which is 1111 0000 </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> >> (right shift)</h6></td>
+      <td><h6>Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.</h6></td>
+      <td><h6>A >> 2 will give 15 which is 1111</h6></td>
+     </tr>  
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>>>> (zero fill right shift)</h6></td>
+      <td><h6>Shift right zero fill operator. The left operands value is moved right by the number of bits specified by the right operand and shifted values are filled up with zeros.</h6></td>
+      <td><h6>A >>>2 will give 15 which is 0000 1111 </h6></td>
+      </tr>
+
+      
+
+
+     
+</table>
+</div><br>
+
+<h3>The Logical Operators</h3>The following table lists the logical operators −<br>
+
+Assume Boolean variables A holds true and variable B holds false, then −<br>
+
+
+
+<div style="padding:10px;">
+   <table border="2"  cellspacing="1" width="100%" style="margin-right:10px;" >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h6>Operator</h6></td>
+      <td><h6>Description</h6></td>
+      <td><h6>Example</h6></td>
+    </tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>&& (logical and)</h6></td>
+      <td><h6>Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.</h6></td>
+      <td><h6> (A && B) is false</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>|| (logical or)</h6></td>
+      <td><h6>Called Logical OR Operator. If any of the two operands are non-zero, then the condition becomes true.</h6></td>
+      <td><h6>(A || B) is true</h6></td>
+     </tr>  
+
+     
+      <tr style="background-color: white; width:100%;">
+      <td><h6>! (logical not)</h6></td>
+      <td><h6>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</h6></td>
+      <td><h6>!(A && B) is true </h6></td>
+      </tr> 
+
+
+     
+</table>
+</div><br>
+
+<h3>The Assignment Operators</h3>Following are the assignment operators supported by Java language −<br>
+
+
+
+
+<div style="padding:10px; ">
+   <table border="2"  cellspacing="1" width="100%" style="margin-right:10px;" >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h6>Operator</h6></td>
+      <td><h6>Description</h6></td>
+      <td><h6>Example</h6></td>
+    </tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>=</h6></td>
+      <td><h6>Simple assignment operator. Assigns values from right side operands to left side operand.</h6></td>
+      <td><h6> C = A + B will assign value of A + B into C</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>+= </h6></td>
+      <td><h6>Add AND assignment operator. It adds right operand to the left operand and assign the result to left operand.</h6></td>
+      <td><h6>C += A is equivalent to C = C + A</h6></td>
+     </tr>  
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>-=</h6></td>
+      <td><h6>Subtract AND assignment operator. It subtracts right operand from the left operand and assign the result to left operand.</h6></td>
+      <td><h6> C -= A is equivalent to C = C – A</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> *=</h6></td>
+      <td><h6>Multiply AND assignment operator. It multiplies right operand with the left operand and assign the result to left operand.</h6></td>
+      <td><h6>C *= A is equivalent to C = C * A</h6></td>
+     </tr>  
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>/=</h6></td>
+      <td><h6>Divide AND assignment operator. It divides left operand with the right operand and assign the result to left operand.</h6></td>
+      <td><h6> C /= A is equivalent to C = C / A</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>%= </h6></td>
+      <td><h6>Modulus AND assignment operator. It takes modulus using two operands and assign the result to left operand.</h6></td>
+      <td><h6>C %= A is equivalent to C = C % A</h6></td>
+     </tr>  
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6><<=</h6></td>
+      <td><h6>Left shift AND assignment operator.</h6></td>
+      <td><h6>C <<= 2 is same as C = C << 2 </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>>>= </h6></td>
+      <td><h6>Right shift AND assignment operator.</h6></td>
+      <td><h6>C >>= 2 is same as C = C >> 2</h6></td>
+     </tr>  
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>&=</h6></td>
+      <td><h6>Bitwise AND assignment operator.</h6></td>
+      <td><h6>C &= 2 is same as C = C & 2 </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>^= </h6></td>
+      <td><h6>bitwise exclusive OR and assignment operator.</h6></td>
+      <td><h6>C ^= 2 is same as C = C ^ 2</h6></td>
+     </tr>  
+
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>|=</h6></td>
+      <td><h6>bitwise inclusive OR and assignment operator.</h6></td>
+      <td><h6> C |= 2 is same as C = C | 2</h6></td>
+      </tr>
+
+     
+</table>
+</div><br>
+
+
+<h3>Miscellaneous Operators</h3>There are few other operators supported by Java Language.<br><h5><b>Conditional Operator ( ? : )</b></h5>
+<p>Conditional operator is also known as the ternary operator. This operator consists of three operands and is used to evaluate Boolean expressions. The goal of the operator is to decide, which value should be assigned to the variable. The operator is written as −</p>
+
+<div style="background-image:linear-gradient(to top,#5d4157 , #a8caba); border-radius: 8px; width:280px; height:70px; padding-left: 20px; margin-left: 20px;">
+  variable x = (expression) ? value if true : value if false
+  </div>Following is an example −<br>
+<b>Example</b>
+<div style="background-image:linear-gradient(to top,#5d4157 , #a8caba); border-radius: 8px; width:280px; height:390px; padding-left: 20px; margin-left: 20px;">
+public class Test {<br>
+
+   public static void main(String args[]) {<br>
+      int a, b;<br>
+      a = 10;<br>
+      b = (a == 1) ? 20: 30;<br>
+      System.out.println( "Value of b is : " +  b );<br>
+
+      b = (a == 10) ? 20: 30;<br>
+      System.out.println( "Value of b is : " + b );<br>
+   }<br>
+}<br>
+
+</div><br>This will produce the following result −<br><b>Output</b>
+<div style="background-image:linear-gradient(to top,#5d4157 , #a8caba); border-radius: 8px; width:280px; height:60px; padding-left: 20px; margin-left: 20px;">
+  Value of b is : 30<br>
+Value of b is : 20
+</div><br>
+
+<h3>Precedence of Java Operators</h3>
+
+<p>Operator precedence determines the grouping of terms in an expression. This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator −<br>
+
+For example, x = 7 + 3 * 2; here x is assigned 13, not 20 because operator * has higher precedence than +, so it first gets multiplied with 3 * 2 and then adds into 7.<br>
+
+Here, operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.</p>
+
+<div style="padding:10px; margin-right: 20px;">
+   <table border="2"  cellspacing="1" width="100%" style="margin-right:10px;" >
+    <tr style="background-color: darkgray; width:100%;  ">
+      <td><h6><b>Category </b></h6></td>
+      <td><h6><b>Operator </b></h6></td>
+      <td><h6><b>Associativity</b></h6></td>
+    </tr>
+
+
+      <tr style="background-color: white; width:100%;">
+      <td><h6>Postfix</h6></td>
+      <td><h6>expression++ expression--</h6></td>
+      <td><h6>Left to right </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>Unary </h6></td>
+      <td><h6>++expression –-expression +expression –expression ~ !</h6></td>
+      <td><h6>Right to left</h6></td>
+     </tr>  
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>Multiplicative  </h6></td>
+      <td><h6>* / % </h6></td>
+      <td><h6> Left to right</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> Additive </h6></td>
+      <td><h6>+ -</h6></td>
+      <td><h6></h6></td>
+     </tr>  
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>Shift</h6></td>
+      <td><h6><< >> >>></h6></td>
+      <td><h6> Left to right</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>Relational   </h6></td>
+      <td><h6>< > <= >= instanceof</h6></td>
+      <td><h6>Left to right</h6></td>
+     </tr>  
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>Equality  </h6></td>
+      <td><h6>== !=</h6></td>
+      <td><h6>Left to right </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6> Bitwise AND</h6></td>
+      <td><h6>&</h6></td>
+      <td><h6>Left to right</h6></td>
+     </tr>  
+
+     <tr style="background-color: white; width:100%;">
+      <td><h6>Bitwise XOR </h6></td>
+      <td><h6>^</h6></td>
+      <td><h6> Left to right</h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>Bitwise OR   </h6></td>
+      <td><h6>|</h6></td>
+      <td><h6>Left to right</h6></td>
+     </tr>  
+
+ <tr style="background-color: white; width:100%;">
+      <td><h6>Logical AND </h6></td>
+      <td><h6>&&</h6></td>
+      <td><h6>Left to right </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>Logical OR</h6></td>
+      <td><h6>||</h6></td>
+      <td><h6>Left to right</h6></td>
+     </tr>  
+
+      
+
+ <tr style="background-color: white; width:100%;">
+      <td><h6>Conditional </h6></td>
+      <td><h6>?:  </h6></td>
+      <td><h6>Right to left </h6></td>
+      </tr>
+
+      <tr style="background-color: lightgray; width:100%;">
+      <td><h6>Assignment </h6></td>
+      <td><h6>= += -= *= /= %= ^= |= <<= >>= >>>=</h6></td>
+      <td><h6>Right to left</h6></td>
+     </tr>  
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn btn-success" style="float: right; background:white;"><a href="csspage12.html">Next lesson</a></div>
+        <div class="btn btn-success" style="float: left;background:white;"><a href="csspage10.html">Previous lesson</a></div><br><br>
+
+
+</div>
+
+    <!--footer-->
+    <div class="abc" style="width:100%; display:inline-block;">
+<footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3>Education Portal</h3>
+              <p>Education portal acts as tool to enhance learning and supplement classroom teaching. These website help make the process of learning and attractive to the student, especially in today’s age.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Usefull links</h4>
+              <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Lessons Descriptions</a></li>
+                <li><a href="#">courses</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>A-49 Near hanuman Mandir<br>
+                 indrapuri extension loni road<br>
+                 Ghaziabad<br>
+                <strong> Phone:</strong> +91 9718327736, +91 9711235497<br>
+                <strong> Email:</strong> guptasoni2005@gmail.com
+              </p>
+              
+
+                        
+                    <div class="social" style="background-color: none;">
+      
+                  <span class="footer-social-overlap footer-social-icons-wrapper">
+                  <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+                  <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                  <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+                  <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+                  </span></div>
+              
+            </div>
+            <div class="col-lg-3 col-md-6 footer-newslater">
+              <h4>Our Newslater</h4>
+              <p>About Website Get Latest daily news and headlines about information on education careers & jobs on Education Times. Latest India Education PR on News section at Brainbuxa Times. Daily News updated when a major India Education scoop arises.
+                        Frequency about 15 posts per week.</p>
+                        <form action="" method="post">
+                          <input type="Email" name="Email" required placeholder="Email">
+                          <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+          </div>
+        </div>
+      </div>
+      
+    
+   <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Education Portal</strong>All Rights Reserved <br>
+        
+      <div class="credits">
+        Designed By <a href="#"> Bharti kannaujiya and Soni</a>
+     </div>
+     </div>
+</div>
+  
+  </footer>
+   </body>
+   </html>

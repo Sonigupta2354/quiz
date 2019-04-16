@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+     <html>
+<head>
+  <title>HtmlPage15</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="..\navbar2.css">
+  <style type="text/css">
+    h3{
+      color:teal; 
+
+    }
+    .text{
+  color: #d64161;
+  margin-top: 3%;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 75px;
+  width: 85%;
+  letter-spacing: -.05em;
+}
+ @media (max-width: 767px)
+   {
+   .content{
+    display: none;
+         }
+    .content2{
+      padding-left:20px;
+      margin-right: 30px;
+      align-self:center;
+    }
+ }
+ 
+  </style>
+   <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('ul').toggleClass('active');
+      })
+
+    })
+  </script>
+  
+
+</head>
+<body>
+ <section>
+    <header>
+
+      <a href="#" class="logo"> <img  style=" width: 150px; height: 72px;    padding-bottom: 5px;"src="..\image\education1.png"></a>
+      <a class="toggle">Menu</a>
+      <ul class="list">
+          <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">OOPs</a></li>
+           <li><a href="#">ABOUT US</a></li>
+      </ul>
+    </header>
+  </section>
+  
+  <h2 class="text">HTML Tables</h2> <br>
+<div class="content"style="width:15%;height:90%;float: left; border: 2px solid gray;  margin-left:5px; padding-top: 5px;">
+  <ul type="none">
+    <li> <h3>HTML-TUTORIALS</h3></li><hr>
+    <li><a href="htmlpage2.html">Editors</a></li><hr>
+    <li><a href="htmlpage3.html">Basics</a></li><hr>
+    <li><a href="htmlpage4.html">Document</a> </li><hr> 
+    
+    <li><a href="htmlpage5.html">Head</a></li><hr>
+    <li><a href="htmlpage6.html">Meta tags </a> </li><hr>
+    <li><a href="htmlpage7.html">Elements  </a> </li><hr>
+    <li><a href="htmlpage8.html">Attributes</a> </li><hr>
+    <li><a href="htmlpage9.html">Headings  </a> </li><hr>
+    <li><a href="htmlpage10.html">Paragraphs</a> </li><hr>
+    <li><a href="htmlpage11.html">Comments  </a> </li><hr>
+    <li><a href="htmlpage12.html">Links     </a> </li><hr>
+    <li><a href="htmlpage13.html">Email links</a></li><hr>
+    <li><a href="htmlpage14.html">Images</a> </li><hr>
+    <li><a href="htmlpage15.html">Tables</a> </li><hr>
+    <li><a href="htmlpage16.html">Lists </a> </li><hr>
+    <li><a href="htmlpage17.html">Styles</a>  </li><hr>
+    <li><a href="htmlpage18.html">Blocks </a>  </li><hr>
+    <li><a href="htmlpage19.html">Marquee</a> </li><hr>
+    <li><a href="htmlpage20.html">Classes</a>  </li><hr>
+   
+ </ul>
+</div> 
+                <!--introduction-->
+    <div class="content2"style="width:80%;height:100%;float: right; border: 2px solid gray;padding-left:25px; padding-top: 20px;padding-right:20px; ">
+      <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading"> </h3></div> <div class="col-md-10 col-sm-10"> 
+        The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.<br>
+
+        The HTML tables are created using the &lt;table&gt; tag in which the &lt;tr&gt; tag is used to create table rows and &lt;td&gt; tag is used to create data cells. The elements under &lt;td&gt; are regular and left aligned by default
+        <h5>Example</h5>
+         <div style="border:2px solid gray;  width:80%; height:85%%;  padding: 10px 20px 10px 10px; background-color: lightgray; ">
+       &lt; !DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt; title&gt; HTML Tables&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;table border="1"&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Row 1, Column 1 &lt;/td&gt;<br>
+        &lt;td&gt;Row 1, Column 2 &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+         &lt;tr&gt;<br>
+        &lt;td&gt;Row 2, Column 1 &lt;/td&gt;<br>
+        &lt;td&gt;Row 2, Column 2 &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+         </div>
+      <p> </p> </div></div>
+      <div class="row flow-steps" id="Introduction"> <div class="col-md-2 col-sm-2 no-right-padding"><h3 class="sub-heading"></h3></div> <div class="col-md-10 col-sm-10"><h5>Example</h5>
+        <table border = "1">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+        </table><br>
+       <p>Here, the border is an attribute of &lt;table&gt; tag and it is used to put a border across all the cells. If you do not need a border, then you can use border = "0". </p> </div></div>
+       <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading"> </h3></div> <div class="col-md-10 col-sm-10"> <h4>Table Heading</h4>
+       Table heading can be defined using &lt;th&gt; tag. This tag will be put to replace &lt;td&gt; tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use &lt;th&gt; element in any row. Headings, which are defined in &lt;th&gt; tag are centered and bold by default.
+       <h5 style="color: blue;">Example</h5>
+         <div style="border:2px solid gray;  width:80%; height:68%;  padding: 10px 20px 10px 10px; background-color: lightgray; ">
+       &lt; !DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt; title&gt; HTML Table Header&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;table border="1"&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Name &lt;/td&gt;<br>
+        &lt;td&gt;Salary &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Ramesh Raman &lt;/td&gt;<br>
+        &lt;td&gt;5000&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Shabbir Hussein &lt;/td&gt;<br>
+        &lt;td&gt;7000&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+         </div>
+      <p> </p> </div></div>
+       <div class="row flow-steps" id="Introduction"> <div class="col-md-2 col-sm-2 no-right-padding"><h3 class="sub-heading"></h3></div> <div class="col-md-10 col-sm-10">
+        This will produce the following result- <br>
+        <table border = "1">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>Ramesh Raman</td>
+            <td>5000</td>
+         </tr>
+         
+         <tr>
+            <td>Shabbir Hussein</td>
+            <td>7000</td>
+         </tr>
+        </table>
+       <p> </p> </div></div>
+
+       <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading"> </h3></div> <div class="col-md-10 col-sm-10"> <h4>Cellpadding and Cellspacing Attributes</h4>There are two attributes called cellpadding and cellspacing which you will use to adjust the white space in your table cells. The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.
+
+       <h5 style="color: blue;">Example</h5>
+         <div style="border:2px solid gray;  width:80%; height:68%;  padding: 10px 20px 10px 10px; background-color: lightgray; ">
+       &lt; !DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt; title&gt; HTML Table Cellpadding&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;table border="1"  cellpadding = "5" cellspacing = "5"&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Name &lt;/td&gt;<br>
+        &lt;td&gt;Salary &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Ramesh Raman &lt;/td&gt;<br>
+        &lt;td&gt;5000&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Shabbir Hussein &lt;/td&gt;<br>
+        &lt;td&gt;7000&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+         </div>
+      <p> </p> </div></div>
+       <div class="row flow-steps" id="Introduction"> <div class="col-md-2 col-sm-2 no-right-padding"><h3 class="sub-heading"></h3></div> <div class="col-md-10 col-sm-10">
+        This will produce the following result- <br>
+        <table border = "1" cellpadding = "5" cellspacing = "5">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>Ramesh Raman</td>
+            <td>5000</td>
+         </tr>
+         <tr>
+            <td>Shabbir Hussein</td>
+            <td>7000</td>
+         </tr>
+      </table>
+       <p> </p> </div></div>
+       <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading"> </h3></div> <div class="col-md-10 col-sm-10"> <h4>Colspan and Rowspan Attributes</h4>
+       You will use <b>colspan</b> attribute if you want to merge two or more columns into a single column. Similar way you will use <b>rowspan</b> if you want to merge two or more rows.
+       <h5 style="color: blue;">Example</h5>
+         <div style="border:2px solid gray;  width:80%; height:77%;  padding: 10px 20px 10px 10px; background-color: lightgray; ">
+       &lt; !DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt; title&gt; HTML Table C&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;table border="1"&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;th&gt;column 1 &lt;/th&gt;<br>
+        &lt;th&gt;column 2 &lt;/th&gt;<br>
+        &lt;th&gt;column 3 &lt;/th&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td rowspan="2" &gt;  Row 1 Cell 1&lt;/td&gt;<br>
+        &lt;td&gt;Row 1 Cell 2&lt;/td&gt;<br>
+        &lt;td&gt;Row 1 Cell 3&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Row 2 Cell 2 &lt;/td&gt;<br>
+        &lt;td&gt;Row 2 Cell 3&lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td colspan="3"&gt; Row 3 Cell 1 &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+         </div>
+      <p> </p> </div></div>
+       <div class="row flow-steps" id="Introduction"> <div class="col-md-2 col-sm-2 no-right-padding"><h3 class="sub-heading"></h3></div> <div class="col-md-10 col-sm-10">
+        This will produce the following result- <br>
+       <table border = "1">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+       <p> </p> </div></div>
+        <div class="row flow-steps" id="Introduction">  <div class="col-md-2 col-sm-2 no-right-padding"> <h3 class="sub-heading"> </h3></div> <div class="col-md-10 col-sm-10"> <h4>Table Header, Body, and Footer</h4>
+        Tables can be divided into three portions − a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, while the body is the main content holder of the table.
+        <br>
+        The three elements for separating the head, body, and foot of a table are −
+        <ul> 
+          <li>&lt;thead&gt; − to create a separate table header.</li>
+          <li>&lt;tbody&gt; − to indicate the main body of the table.</li>
+          <li>&lt;tfoot&gt; − to create a separate table footer.</li>
+        </ul>
+        A table may contain several &lt;tbody
+        &gt; elements to indicate different pages or groups of data. But it is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;
+        <h5>Example</h5>
+         <div style="border:2px solid gray;  width:80%; height:85%%;  padding: 10px 20px 10px 10px; background-color: lightgray; ">
+       &lt; !DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &lt; title&gt; HTML Table &lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &lt;table border="1" width="100%"&gt;<br>
+        &lt;thead&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td colspan ="4"&gt;This is the head of the table &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/thead&gt;<br>
+        &lt;tfoot&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td colspan ="4"&gt;This is the foot of the table &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/tfoot&gt;<br>
+        &lt;tbody&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;Cell 1 &lt;/td&gt;<br>
+        &lt;td&gt;Cell 2 &lt;/td&gt;<br>
+        &lt;td&gt;Cell 3 &lt;/td&gt;<br>
+        &lt;td&gt;Cell 4 &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/tbody&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+         </div>
+      <p> </p> </div></div>
+       <div class="row flow-steps" id="Introduction"> <div class="col-md-2 col-sm-2 no-right-padding"><h3 class="sub-heading"></h3></div> <div class="col-md-10 col-sm-10">
+        This will produce the following result- <br>
+          <table border = "1" width = "100%">
+         <thead>
+            <tr>
+               <td colspan = "4">This is the head of the table</td>
+            </tr>
+         </thead>
+         
+         <tfoot>
+            <tr>
+               <td colspan = "4">This is the foot of the table</td>
+            </tr>
+         </tfoot>
+         
+         <tbody>
+            <tr>
+               <td>Cell 1</td>
+               <td>Cell 2</td>
+               <td>Cell 3</td>
+               <td>Cell 4</td>
+            </tr>
+         </tbody>
+         
+      </table>
+       <p> </p> </div></div>
+
+
+
+
+
+
+       <div class="btn btn-success" style="float: right;"><a href="htmlpage3.html">Next lesson</a></div>
+        <div class="btn btn-success" style="float: left;"><a href="htmlpage1.html">Previous lesson</a></div>
+</div>
+       <!--footer-->
+<div class="abc" style="width:100%; display:inline-block;">
+<footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3>Education Portal</h3>
+              <p>Education portal acts as tool to enhance learning and supplement classroom teaching. These website help make the process of learning and attractive to the student, especially in today’s age.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Usefull links</h4>
+              <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Lessons Descriptions</a></li>
+                <li><a href="#">courses</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>A-49 Near hanuman Mandir<br>
+                 indrapuri extension loni road<br>
+                 Ghaziabad<br>
+                <strong> Phone:</strong> +91 9718327736, +91 9711235497<br>
+                <strong> Email:</strong> guptasoni2005@gmail.com
+              </p>
+              
+
+                        
+                    <div class="social" style="background-color: none;">
+      
+                  <span class="footer-social-overlap footer-social-icons-wrapper">
+                  <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+                  <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                  <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                  <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+                  <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+                  </span></div>
+              
+            </div>
+            <div class="col-lg-3 col-md-6 footer-newslater">
+              <h4>Our Newslater</h4>
+              <p>About Website Get Latest daily news and headlines about information on education careers & jobs on Education Times. Latest India Education PR on News section at Brainbuxa Times. Daily News updated when a major India Education scoop arises.
+                        Frequency about 15 posts per week.</p>
+                        <form action="" method="post">
+                          <input type="Email" name="Email" required placeholder="Email">
+                          <input type="submit" value="Subscribe" >
+                        </form>
+                    </div>
+          </div>
+        </div>
+      </div>
+      
+    
+   <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Education Portal</strong>All Rights Reserved <br>
+        
+      <div class="credits">
+        Designed By <a href="#"> Bharti kannaujiya and Soni</a>
+     </div>
+     </div>
+</div>
+  
+  </footer>
+
+  </body>
+  </html>
